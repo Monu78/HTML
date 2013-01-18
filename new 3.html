@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function changeImage()
+{
+element=document.getElementById('new3')
+if (element.src.match("green"))
+  {
+  element.src="red.jpg";
+  
+  }
+else
+ {}
+ }
+ 
+ function unchangeImage()
+{
+element=document.getElementById('new3')
+if (element.src.match("red"))
+  {
+  element.src="green.jpg";
+  }
+else
+ {}
+ }
+ 
+ function displayDate()
+{
+document.getElementById("dem").innerHTML=Date();
+}
+ 
+</script>
+
+<h1>Indian Time</h1>
+<p id="dem">This is a paragraph.</p>
+
+
+<img id="new3" onclick="changeImage()"
+src="green.jpg" width="400" height="180">
+
+
+<button type="b" onclick="changeImage()">on</b>
+<button type="b" onclick="unchangeImage()">off</b>
+<button type="b" onclick="displayDate()">time</b>
+
+</body>
+</html>
+
+
